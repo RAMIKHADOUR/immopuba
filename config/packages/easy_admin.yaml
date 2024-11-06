@@ -1,0 +1,8 @@
+# config/packages/easy_admin.yaml
+easy_admin:
+    design:
+        brand_color: '#FF5733'
+        logo: 'logo.svg'
+    entities:
+        - App\Entity\User
+        # Add other entities you want to manage in the admin panel
