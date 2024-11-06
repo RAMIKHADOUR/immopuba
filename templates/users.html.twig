@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User-Profile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/axentix@2.4.0/dist/axentix.min.css">
+</head>
+
+<body class="layout-sidenav">
+    <header>
+      
+        <nav class="navbar shadow-1 success">
+           
+        <a class="navbar-brand text-brand" href="{{path('app_home')}}">FreeImmo</a>
+            <div class="navbar-menu ml-auto">
+            <a class="nav-link text-decoration-none" href="{{path('app_home')}}">Accueil</a>
+                <a class="navbar-link" href="{{ path('app_logout') }}">Déconnexion</a>
+            </div>
+            
+        </nav>
+    
+    </header>
+    <div id="example-sidenav" data-ax="sidenav" class="sidenav shadow-1 sidenav-fixed white">
+    
+        <a href="#" class="sidenav-link active">Mon Profile</a>
+        <a href="#" class="sidenav-link">Mes annonces</a>
+    </div>
+
+<main>
+    <button data-target="example-sidenav" class="btn press amaranth dark-1 sidenav-trigger hide-md-up">
+        Open sidenav
+    </button>
+    {% block body %}{% endblock %}
+</main>
+
+    <footer class="footer success">
+        Copyright © 2024 - FreeImmo
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axentix@2.4.0/dist/axentix.min.js"></script>
+    
+</body>
+
+</html>
